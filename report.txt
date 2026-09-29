@@ -1,0 +1,29 @@
+Customer Default Risk Prediction
+Introduction
+
+The aim of this project was to predict whether a customer is likely to default using machine learning. The dataset had 10,000 customer records with financial, personal, and credit-related information.
+
+Data Preprocessing
+
+First, I checked the data for missing values, incorrect categories, and outliers. Missing numerical values were filled using the median. The Bachlors category was corrected to Bachelors. I also created two new features: income_per_dependent and signup_recency_days. Categorical data was one-hot encoded and numerical features were scaled.
+
+Model Results
+
+I tested five models: Logistic Regression, Decision Tree, SVM, Random Forest, and XGBoost.
+
+Model	Accuracy
+Logistic Regression	93.45%
+Decision Tree	91.80%
+SVM	93.95%
+Random Forest	94.15%
+XGBoost	96.15%
+
+XGBoost gave the highest accuracy among the models tested.
+
+Hyperparameter Tuning
+
+I used GridSearchCV to tune Random Forest and XGBoost. The tuning did not improve the test results compared to the original models. The baseline XGBoost model still performed better with 96.15% accuracy.
+
+Conclusion
+
+Overall, the project helped me understand the complete machine learning process, from cleaning and preparing the data to training and comparing different models. XGBoost performed the best on this dataset with an accuracy of 96.15%.
