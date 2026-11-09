@@ -32,7 +32,10 @@ Your goal is to perform **complete data preprocessing, exploratory data analysis
 
 ### 2. Data Preprocessing
 - Handle missing values (imputation strategies).
-- Fix categorical inconsistencies (e.g., typos in `education` like "Bachlors").
+- Fix categorical inconsistencies (e.g., typos in `education` like "Bachlors"). 
+	(COMPLETED TILL HERE)
+
+
 - Encode categorical variables (one-hot encoding / ordinal encoding).
 - Scale numeric features (StandardScaler/MinMaxScaler for algorithms like Logistic Regression, SVM).
 - Create or transform features if useful (e.g., income per dependent, recency from `signup_date`).
